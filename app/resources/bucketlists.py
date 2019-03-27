@@ -2,7 +2,7 @@ from flask import g, request
 from flask.ext.restful import Resource, marshal
 from flask_restful import reqparse
 from .. serializers.serializers import bucketlist_serializer
-from base import authorized_user_bucketlist, add_item, delete_item, edit_item
+from .base import authorized_user_bucketlist, add_item, delete_item, edit_item
 from .. models import Bucketlist
 
 

@@ -3,7 +3,7 @@ from flask.ext.restful import Resource, marshal
 from flask_restful import reqparse
 from .. serializers.serializers import item_serializer
 from .. models import Bucketlist, Item
-from base import unauthorized, add_item, delete_item, edit_item, authorized_user_bucketlist, authorized_user_item
+from .base import unauthorized, add_item, delete_item, edit_item, authorized_user_bucketlist, authorized_user_item
 
 
 class ItemsAPI(Resource):

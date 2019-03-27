@@ -2,7 +2,7 @@ from flask.ext.restful import Resource
 from flask_restful import reqparse
 from .. serializers.serializers import user_serializer
 from .. models import User
-from base import unauthorized, add_item
+from .base import unauthorized, add_item
 
 
 class UserRegister(Resource):
